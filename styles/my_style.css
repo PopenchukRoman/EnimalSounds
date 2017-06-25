@@ -1,0 +1,100 @@
+body{
+	background-color:#000000;
+  }
+  
+  #top {
+	position:absolute;
+	left:191px;
+	top:15px;
+	z-index: 4;
+	}
+	
+#text_top {
+	position:relative;
+	z-index: 4;
+	}
+
+  p{
+	color:#33FF66;
+	font-family:Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	}	
+	
+#container{
+		position:absolute;
+		left:0px;
+		top:0px;
+		z-index:0;
+		}
+		
+.lightning{
+	display:none;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:0;
+	}
+			
+#frame{
+	position:absolute;
+	top: 100px;
+	left:500px;
+	width:546px;
+	height:629px;
+	background:url(../images/frame.jpg);
+	z-index:2;
+	overflow:hidden;
+	}
+	
+#pic_box{
+	position:relative;
+	left:89px;
+	top: 84px;
+	width:367px;
+	height:460px;
+	z-index:1;
+	overflow:hidden;
+	}
+
+.face{
+	position:relative;
+	top:0px;
+	left:0px;
+	z-index:1;
+	}	
+	
+#head{
+	height:172px;
+	}
+	
+#eyes{
+	height:79px;
+	}
+	
+#nose{
+	height:86px;
+	}
+	
+#mouth{
+	height:117px;
+	}
+
+#btn_randoanimal{
+	position:inherit;
+	
+	text-align:center;
+	}
+#btn_reset{
+	margin-left:40px;
+	
+	
+	text-align:center;
+	}
+#btn_soundmix{
+	margin-left:40px;
+	
+	
+	text-align:center;
+	}		
+
+

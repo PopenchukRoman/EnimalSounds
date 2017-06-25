@@ -1,0 +1,112 @@
+$(document).ready(function(){
+	alert("document");
+	
+var headclix = 0, eyeclix = 0, noseclix = 0, mouthclix = 0;
+
+		lightning_one();
+		lightning_two();
+		lightning_three();
+		
+		function getRandom(num){
+		
+		var my_num = Math.floor(Math.random()*num);
+		return my_num;
+		}
+	
+	
+		$("#randomface").click(function(){
+		 
+		var rand1 =  getRandom(10);
+		 for(var i=0; i<rand1; i++){
+		 $("#head").trigger('click');		
+		 }
+		
+		var rand2 =  getRandom(10);
+		 for(var i=0; i<rand2; i++){
+		 $("#eyes").trigger('click');		
+		 }
+
+		var rand3 =  getRandom(10);
+		 for(var i=0; i<rand3; i++){
+		 $("#nose").trigger('click');		
+		 }
+
+		var rand4 =  getRandom(10);
+		 for(var i=0; i<rand4; i++){
+		 $("#mouth").trigger('click');		
+		 }
+
+		});
+
+
+
+  $("#head").click(function(){		
+	  
+		if (headclix < 9){
+	$("#head").animate({left:"-=367px"},200);
+		headclix+=1;
+		}
+		else{
+			$("#head").animate({left:"0px"},200);
+			headclix = 0;
+		}
+	
+	});
+	
+	
+	$("#eyes").click(function(){
+	
+		if (eyeclix < 9){
+		$("#eyes").animate({left:"-=367px"},200);
+			eyeclix+=1;
+		}
+		else{
+			$("#eyes").animate({left:"0px"},200);
+			eyeclix = 0;
+		}
+	});
+	
+	
+	$("#nose").click(function(){
+		if (noseclix < 9){
+	$(this).animate({left:"-=367px"},200);
+		noseclix+=1;
+		}
+		else{
+			$(this).animate({left:"0px"},200);
+			noseclix = 0;
+		}
+	});//end click
+	
+	 $("#mouth").click(function(){
+	
+	if (mouthclix < 9){
+	$("#mouth").animate({left:"-=367px"},200);
+		mouthclix+=1;
+		}
+		else{
+			$("#mouth").animate({left:"0px"},200);
+			mouthclix = 0;
+		}
+	
+	});
+	
+
+	
+});
+
+function lightning_one(){
+	$("#container #lightning1").fadeIn(250).fadeOut(250);
+	setTimeout("lightning_one()",4000);
+};
+
+function lightning_two(){
+	$("#container #lightning2").fadeIn("fast").fadeOut("fast");
+	setTimeout("lightning_two()",5000);
+};
+
+function lightning_three(){
+	$("#container #lightning3").fadeIn("fast").fadeOut("fast");
+	setTimeout("lightning_three()",7000);
+};
+
