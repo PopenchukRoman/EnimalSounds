@@ -35,9 +35,13 @@ $(document).ready(function(){
 			});
 			
 			$('#head').draggable({axis: "x"});
+			$('#eyes').draggable({axis: "x"});
+			$('#nose').draggable({axis: "x"});
+			$('#mouth').draggable({axis: "x"});
+			
 			function moveFace(){
 				
-				
+				//$("#head").draggable({axis: 'x'});
 				$('#head').click(function(){
 						if(headclix<9){
 							$(this).animate({'left':'-=367px'},500);
